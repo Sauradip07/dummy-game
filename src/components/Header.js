@@ -1,7 +1,7 @@
 import React from "react";
 import gameLogo from "../assets/img/gameLogo.png";
 import Leaderboard from "./Leaderboard";
-import Rules from "./Rules";
+//import Rules from "./Rules";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { removeItem } from "../utils/storage";
@@ -44,7 +44,7 @@ const Header = (props) => {
         </div>
       )}
       <div className="flex text-xl px-14 py-4 space-x-8 items-center">
-        <Rules />
+        {/*<Rules /> */}
         {!isLobby && <Leaderboard />}
         {!isLobby && (
           <p onClick={exitGame} className="cursor-pointer font-bold">

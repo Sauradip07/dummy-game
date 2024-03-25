@@ -3,9 +3,6 @@ import leaderboardReducer from "./slice/leaderboardSlice";
 import userReducer from "./slice/userSlice";
 
 
-
-
-
 const store= configureStore({
      reducer:{
          user:userReducer,
